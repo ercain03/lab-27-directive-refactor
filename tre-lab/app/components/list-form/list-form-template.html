@@ -1,0 +1,11 @@
+<form class="form-inline"
+  novalidate data-ng-submit="ctrl.saveAndNull(ctrl.list)">
+
+  <div class="form-group">
+    <label for="name" class="new-note">Created List:</label>
+    <input name="name" class="form-control" data-ng-model="ctrl.list.name">
+  </div>
+
+  <button type="submit" class="btn btn-default btn-primary">{{ctrl.buttonText}}</button>
+  <data-ng-transclude></data-ng-transclude>
+</form>
